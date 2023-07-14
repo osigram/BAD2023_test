@@ -26,7 +26,9 @@ func main() {
 	for _, word := range words {
 		wordSlice := strings.Split(word, "")
 
-		found = append(found, getSymbol(wordSlice))
+		if symbol := getSymbol(wordSlice); symbol != "" {
+			found = append(found, getSymbol(wordSlice))
+		}
 		continue
 	}
 
