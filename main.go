@@ -27,7 +27,7 @@ func main() {
 		wordSlice := strings.Split(word, "")
 
 		if symbol := getSymbol(wordSlice); symbol != "" {
-			found = append(found, getSymbol(wordSlice))
+			found = append(found, symbol)
 		}
 		continue
 	}
